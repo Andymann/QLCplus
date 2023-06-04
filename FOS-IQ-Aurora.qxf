@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>Andy Fischer</Author>
+ </Creator>
+ <Manufacturer>FOS</Manufacturer>
+ <Model>IQ Aurora</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="31">closed</Capability>
+  <Capability Min="32" Max="63">open</Capability>
+  <Capability Min="64" Max="95">strobe slow to fast</Capability>
+  <Capability Min="96" Max="127">open</Capability>
+  <Capability Min="128" Max="159">pulse-effect in sequences slow to fast</Capability>
+  <Capability Min="160" Max="191">shutter open</Capability>
+  <Capability Min="192" Max="223">random strobe effect slow to fast</Capability>
+  <Capability Min="224" Max="255">shutter open</Capability>
+ </Channel>
+ <Channel Name="Pan coarse">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Pan coarse</Capability>
+ </Channel>
+ <Channel Name="Pan fine">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">pan fine</Capability>
+ </Channel>
+ <Channel Name="Tilt coarse">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">tilt coarse</Capability>
+ </Channel>
+ <Channel Name="Tilt fine">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt fine</Capability>
+ </Channel>
+ <Channel Name="Speed Pan/ Tilt">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="225">Max to min</Capability>
+  <Capability Min="226" Max="235">Blackout by movement</Capability>
+  <Capability Min="236" Max="255">No function</Capability>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">DImm dark to bright</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Dimm dark to bright</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Dimm dark to bright</Capability>
+ </Channel>
+ <Channel Name="White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">Dimm dark to bright</Capability>
+ </Channel>
+ <Channel Name="Macro Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="31">Red</Capability>
+  <Capability Min="32" Max="47">Green</Capability>
+  <Capability Min="48" Max="63">Blue</Capability>
+  <Capability Min="64" Max="79">White</Capability>
+  <Capability Min="80" Max="95">Red+Green</Capability>
+  <Capability Min="96" Max="111">Red+Blue</Capability>
+  <Capability Min="112" Max="127">Red+White</Capability>
+  <Capability Min="128" Max="143">Green+Blue</Capability>
+  <Capability Min="144" Max="159">Green+White</Capability>
+  <Capability Min="160" Max="175">Blue+White</Capability>
+  <Capability Min="176" Max="191">R+G+B</Capability>
+  <Capability Min="192" Max="207">R+G+B+W</Capability>
+  <Capability Min="208" Max="212">2700K</Capability>
+  <Capability Min="213" Max="217">3200K</Capability>
+  <Capability Min="218" Max="222">3500K</Capability>
+  <Capability Min="223" Max="227">5000K</Capability>
+  <Capability Min="228" Max="232">5500K</Capability>
+  <Capability Min="233" Max="237">6000K</Capability>
+  <Capability Min="238" Max="242">6500K</Capability>
+  <Capability Min="243" Max="247">7000K</Capability>
+  <Capability Min="248" Max="255">8000K</Capability>
+ </Channel>
+ <Channel Name="Color Temperature">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="45">Below 3200K</Capability>
+  <Capability Min="46" Max="75">3200..3500K</Capability>
+  <Capability Min="76" Max="105">3500..5000K</Capability>
+  <Capability Min="106" Max="135">5000..5500K</Capability>
+  <Capability Min="136" Max="165">5500..6000K</Capability>
+  <Capability Min="166" Max="195">6000..6500K</Capability>
+  <Capability Min="196" Max="225">6500..7000K</Capability>
+  <Capability Min="226" Max="255">7000..8000K</Capability>
+ </Channel>
+ <Channel Name="Macro Run">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="31">Macro run 1</Capability>
+  <Capability Min="32" Max="47">Macro run 2</Capability>
+  <Capability Min="48" Max="63">Macro run 3</Capability>
+  <Capability Min="64" Max="79">Macro run 4</Capability>
+  <Capability Min="80" Max="95">Macro run 5</Capability>
+  <Capability Min="96" Max="111">Macro run 6</Capability>
+  <Capability Min="112" Max="127">Macro run 7</Capability>
+  <Capability Min="128" Max="143">Macro run 8</Capability>
+  <Capability Min="144" Max="159">Macro sound 1</Capability>
+  <Capability Min="160" Max="175">Macro sound 2</Capability>
+  <Capability Min="176" Max="191">Macro sound 3</Capability>
+  <Capability Min="192" Max="207">Macro sound 4</Capability>
+  <Capability Min="208" Max="223">Macro sound 5</Capability>
+  <Capability Min="224" Max="239">Macro sound 6</Capability>
+  <Capability Min="240" Max="255">Macro sound 7</Capability>
+ </Channel>
+ <Channel Name="Macro Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Macro speed slow to fast</Capability>
+ </Channel>
+ <Channel Name="Pix_Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Dimm</Capability>
+ </Channel>
+ <Channel Name="Pix_Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255">Pix strobe speed slow to fast</Capability>
+ </Channel>
+ <Channel Name="Pix_red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Dimm</Capability>
+ </Channel>
+ <Channel Name="Pix_green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Dimm</Capability>
+ </Channel>
+ <Channel Name="Pix_blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Dimm</Capability>
+ </Channel>
+ <Channel Name="Pix_color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="15">Red</Capability>
+  <Capability Min="16" Max="31">Green</Capability>
+  <Capability Min="32" Max="47">Blue</Capability>
+  <Capability Min="48" Max="63">Red+Blue</Capability>
+  <Capability Min="64" Max="79">Red+Green</Capability>
+  <Capability Min="80" Max="95">Green+Blue</Capability>
+  <Capability Min="96" Max="111">Red+Blue+Green</Capability>
+  <Capability Min="112" Max="127">2700K</Capability>
+  <Capability Min="128" Max="143">3200K</Capability>
+  <Capability Min="144" Max="159">3500K</Capability>
+  <Capability Min="160" Max="175">5000K</Capability>
+  <Capability Min="176" Max="191">5500K</Capability>
+  <Capability Min="192" Max="207">6000K</Capability>
+  <Capability Min="208" Max="223">6500K</Capability>
+  <Capability Min="224" Max="239">7000K</Capability>
+  <Capability Min="240" Max="255">8000K</Capability>
+ </Channel>
+ <Channel Name="Pix_macro">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="29">Pix dynamic scene 1</Capability>
+  <Capability Min="30" Max="43">Pix dynamic scene 2</Capability>
+  <Capability Min="44" Max="57">Pix dynamic scene 3</Capability>
+  <Capability Min="58" Max="71">Pix dynamic scene 4</Capability>
+  <Capability Min="72" Max="85">Pix dynamic scene 5</Capability>
+  <Capability Min="86" Max="99">Pix dynamic scene 6</Capability>
+  <Capability Min="100" Max="113">Pix dynamic scene 7</Capability>
+  <Capability Min="114" Max="127">Pix dynamic scene 8</Capability>
+  <Capability Min="128" Max="143">Pix dynamic scene 9</Capability>
+  <Capability Min="144" Max="155">Pix dynamic scene 10</Capability>
+  <Capability Min="156" Max="169">Pix dynamic scene 11</Capability>
+  <Capability Min="170" Max="183">Pix dynamic scene 12</Capability>
+  <Capability Min="184" Max="197">Pix dynamic scene 13</Capability>
+  <Capability Min="198" Max="211">Pix dynamic scene 14</Capability>
+  <Capability Min="212" Max="225">Pix dynamic scene 15</Capability>
+  <Capability Min="226" Max="239">Pix dynamic scene 16</Capability>
+  <Capability Min="240" Max="255">Pix dynamic scene 17</Capability>
+ </Channel>
+ <Channel Name="Pix_macro_speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">slow to fast</Capability>
+ </Channel>
+ <Channel Name="Expand patterns">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="16" Max="29">Pix dynamic scene 1</Capability>
+  <Capability Min="30" Max="43">Pix dynamic scene 2</Capability>
+  <Capability Min="44" Max="57">Pix dynamic scene 3</Capability>
+  <Capability Min="58" Max="71">Pix dynamic scene 4</Capability>
+  <Capability Min="72" Max="85">Pix dynamic scene 5</Capability>
+  <Capability Min="86" Max="99">Pix dynamic scene 6</Capability>
+  <Capability Min="100" Max="113">Pix dynamic scene 7</Capability>
+  <Capability Min="114" Max="127">Pix dynamic scene 8</Capability>
+  <Capability Min="128" Max="141">Pix dynamic scene 9</Capability>
+  <Capability Min="142" Max="155">Pix dynamic scene 10</Capability>
+  <Capability Min="156" Max="169">Pix dynamic scene 11</Capability>
+  <Capability Min="170" Max="183">Pix dynamic scene 12</Capability>
+  <Capability Min="184" Max="197">Pix dynamic scene 13</Capability>
+  <Capability Min="198" Max="211">Pix dynamic scene 14</Capability>
+  <Capability Min="212" Max="225">Pix dynamic scene 15</Capability>
+  <Capability Min="226" Max="239">Pix dynamic scene 16</Capability>
+  <Capability Min="240" Max="255">Pix dynamic scene 17</Capability>
+ </Channel>
+ <Channel Name="Pix Foreground Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Pix Expand Patterns Foreground Dimm 0..100</Capability>
+ </Channel>
+ <Channel Name="Pix Background Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Pix Expand Patterns Background Dimm 0..100</Capability>
+ </Channel>
+ <Channel Name="Pix Background Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="15">Red</Capability>
+  <Capability Min="16" Max="31">Green</Capability>
+  <Capability Min="32" Max="47">Blue</Capability>
+  <Capability Min="48" Max="63">Red+Blue</Capability>
+  <Capability Min="64" Max="79">Red+Green</Capability>
+  <Capability Min="80" Max="95">Green+Blue</Capability>
+  <Capability Min="96" Max="111">Red+Blue+Green</Capability>
+  <Capability Min="112" Max="127">2700K</Capability>
+  <Capability Min="128" Max="143">3200K</Capability>
+  <Capability Min="144" Max="159">3500K</Capability>
+  <Capability Min="160" Max="175">5000K</Capability>
+  <Capability Min="176" Max="191">5500K</Capability>
+  <Capability Min="192" Max="207">6000K</Capability>
+  <Capability Min="208" Max="223">6500K</Capability>
+  <Capability Min="224" Max="239">7000K</Capability>
+  <Capability Min="240" Max="255">8000K</Capability>
+ </Channel>
+ <Channel Name="Special Function">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="39">No function</Capability>
+  <Capability Min="40" Max="59">Enter power savings mode</Capability>
+  <Capability Min="60" Max="79">Exit power savings mode</Capability>
+  <Capability Min="80" Max="84">All motor reset</Capability>
+  <Capability Min="85" Max="94">SCAN motor reset</Capability>
+  <Capability Min="95" Max="99">No function</Capability>
+  <Capability Min="100" Max="119">Internal Program 1</Capability>
+  <Capability Min="120" Max="139">Internal Program 2</Capability>
+  <Capability Min="140" Max="159">Internal Program 3</Capability>
+  <Capability Min="160" Max="179">Internal Program 4</Capability>
+  <Capability Min="180" Max="199">Internal Program 5</Capability>
+  <Capability Min="200" Max="219">Internal Program 6</Capability>
+  <Capability Min="220" Max="239">Internal Program 7</Capability>
+  <Capability Min="240" Max="255">Internal sound program 1</Capability>
+ </Channel>
+ <Mode Name="CH28">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Shutter</Channel>
+  <Channel Number="2">Pan coarse</Channel>
+  <Channel Number="3">Pan fine</Channel>
+  <Channel Number="4">Tilt coarse</Channel>
+  <Channel Number="5">Tilt fine</Channel>
+  <Channel Number="6">Speed Pan/ Tilt</Channel>
+  <Channel Number="7">Red</Channel>
+  <Channel Number="8">Green</Channel>
+  <Channel Number="9">Blue</Channel>
+  <Channel Number="10">White</Channel>
+  <Channel Number="11">Macro Color</Channel>
+  <Channel Number="12">Color Temperature</Channel>
+  <Channel Number="13">Macro Run</Channel>
+  <Channel Number="14">Macro Speed</Channel>
+  <Channel Number="15">Pix_Dimmer</Channel>
+  <Channel Number="16">Pix_Strobe</Channel>
+  <Channel Number="17">Pix_red</Channel>
+  <Channel Number="18">Pix_green</Channel>
+  <Channel Number="19">Pix_blue</Channel>
+  <Channel Number="20">Pix_color</Channel>
+  <Channel Number="21">Pix_macro</Channel>
+  <Channel Number="22">Pix_macro_speed</Channel>
+  <Channel Number="23">Expand patterns</Channel>
+  <Channel Number="24">Pix Foreground Dimmer</Channel>
+  <Channel Number="25">Pix Background Dimmer</Channel>
+  <Channel Number="26">Pix Background Color</Channel>
+  <Channel Number="27">Special Function</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="175" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
