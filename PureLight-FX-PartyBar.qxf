@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>Andy Fischer</Author>
+ </Creator>
+ <Manufacturer>PureLight</Manufacturer>
+ <Model>FX PartyBar</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Red left" Preset="IntensityRed"/>
+ <Channel Name="Green left" Preset="IntensityGreen"/>
+ <Channel Name="Blue left" Preset="IntensityBlue"/>
+ <Channel Name="White left" Preset="IntensityWhite"/>
+ <Channel Name="Rotation left">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Red center" Preset="IntensityRed"/>
+ <Channel Name="Green center" Preset="IntensityGreen"/>
+ <Channel Name="Blue center" Preset="IntensityBlue"/>
+ <Channel Name="White center" Preset="IntensityWhite"/>
+ <Channel Name="Red right" Preset="IntensityRed"/>
+ <Channel Name="Green right" Preset="IntensityGreen"/>
+ <Channel Name="Blue right" Preset="IntensityBlue"/>
+ <Channel Name="White right" Preset="IntensityWhite"/>
+ <Channel Name="Rotation right">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Strobo" Preset="ShutterStrobeSlowFast"/>
+ <Mode Name="15 Channel">
+  <Channel Number="0">Red left</Channel>
+  <Channel Number="1">Green left</Channel>
+  <Channel Number="2">Blue left</Channel>
+  <Channel Number="3">White left</Channel>
+  <Channel Number="4">Rotation left</Channel>
+  <Channel Number="5">Red center</Channel>
+  <Channel Number="6">Green center</Channel>
+  <Channel Number="7">Blue center</Channel>
+  <Channel Number="8">White center</Channel>
+  <Channel Number="9">Red right</Channel>
+  <Channel Number="10">Green right</Channel>
+  <Channel Number="11">Blue right</Channel>
+  <Channel Number="12">White right</Channel>
+  <Channel Number="13">Rotation right</Channel>
+  <Channel Number="14">Strobo</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
